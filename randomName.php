@@ -44,4 +44,3 @@ function randomName($language, $adet)
 }
 
 ?>
-burak
