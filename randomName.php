@@ -1,5 +1,5 @@
 <?php
-echo randomName("en",5);
+
 
 class Random{
 
