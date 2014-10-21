@@ -1,5 +1,7 @@
 <?php
 
+$obj = new Random();
+$obj->randomName($argv[1]);
 
 class Random{
 
