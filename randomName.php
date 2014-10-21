@@ -39,7 +39,7 @@ class Random{
 			{
 			$index_isim = rand(0,$isim_boyut-1);
 			$index_sifat = rand(0,$sifat_boyut-1);
-			$kelime = $sozluk[$language][1][$index_sifat]. " " . $sozluk[$language][0][$index_isim] . "</br>"."\n";
+			$kelime = $sozluk[$language][1][$index_sifat]. " " . $sozluk[$language][0][$index_isim] . "\n";
 			if ($this->kelimeKontrol($kelime)) {
 				array_push($this->gecmis,$kelime);
 				$i++;
