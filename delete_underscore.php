@@ -1,26 +1,23 @@
 <?php
-$cumle = $_POST['cumle'];
-echo alltrire_sil($cumle);
 
-function alltrire_sil($cumle) {
-	$array = str_split($cumle);
+echo ReplaceUnderscoreWithSpace($cumle);
+
+function ReplaceUnderscoreWithSpace($cumle) {
+	$dizi = str_split($cumle);
 	$first = 0;
-	$last = count($array)-1;
-	if ($array[$first]=="_")
-		{
-			$first++;
-		}
-	if ($array[$last]=="_") 	
-		{
-			$last--;
-		}
+	$last = count($dizi)-1;
+	if ($dizi[$first]=="_"){
+		$first++;
+	}
+	if ($dizi[$last]=="_"){
+		$last--;
+	}
 	for( $i = $first; $i < $last; $i++) {
 	
-		if ($array[$i]=="_")
-		{
-			$array[$i] = " ";
+		if ($dizi[$i]=="_"){
+			$dizi[$i] = " ";
 		}
 	}
-	return  implode("",$array);
+	return  implode("",$dizi);
 }
 ?>
