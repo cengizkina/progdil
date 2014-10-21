@@ -1,7 +1,5 @@
 <?php
 
-$obj = new Random();
-$obj->randomName($argv[1]);
 
 class Random{
 
@@ -40,6 +38,7 @@ class Random{
 			$index_isim = rand(0,$isim_boyut-1);
 			$index_sifat = rand(0,$sifat_boyut-1);
 			$kelime = $sozluk[$language][1][$index_sifat]. " " . $sozluk[$language][0][$index_isim] . "\n";
+			
 			if ($this->kelimeKontrol($kelime)) {
 				array_push($this->gecmis,$kelime);
 				$i++;
@@ -56,6 +55,9 @@ class Random{
 			return true;
 		}
 	}
-
 }
+
+$obj = new Random();
+$obj->randomName($argv[1], $argv[2]);
+
 ?>
