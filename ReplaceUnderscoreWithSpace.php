@@ -3,7 +3,7 @@
 class Underscore  {
 
 	function ReplaceUnderscoreWithSpace($word) {
-		if (justunderscore($word))  {
+		if ($this-> justunderscore($word))  {
 			echo $word;
 		}
 		else 
