@@ -2,37 +2,37 @@
 
 class Underscore  {
 
-	function ReplaceUnderscoreWithSpace($cumle) {
+	function ReplaceUnderscoreWithSpace($word) {
 		if (justunderscore($word))  {
 			echo $word;
 		}
 		else 
 		{
-			$dizi = str_split($cumle);
+			$array = str_split($word);
 			$first = 0;
-			$last = count($dizi)-1;
+			$last = count($array)-1;
 			
-		while ($dizi[$first] == "_")  {
+		while ($array[$first] == "_")  {
 			$first++;
 		}
-		while ($dizi[$last] == "_")  {
+		while ($array[$last] == "_")  {
 			$last--;
 		}
 		
 		for( $i = $first; $i < $last; $i++)  {
 		
-			if ($dizi[$i] == "_")  {
-				$dizi[$i] = " ";
+			if ($array[$i] == "_")  {
+				$array[$i] = " ";
 			}
 		}
-		echo implode("", $dizi) . "\n";
+		echo implode("", $array) . "\n";
 	}
 	}
 	function justunderscore($word)	{
 		$array2 = str_split($word);
 		$j=0;
 		$underscore = true;
-		while($j < count($array2)&& $underscore)  {
+		while($j < count($array2) && $underscore)  {
 			if($array2[$j] == "_")	{
 				$j++;
 				$underscore = true;
