@@ -30,7 +30,7 @@ class Underscore  {
 	}
 	function justunderscore($word)	{
 		$array2 = str_split($word);
-		$j=0;
+		$j  =0;
 		$underscore = true;
 		while($j < count($array2) && $underscore)  {
 			if($array2[$j] == "_")	{
