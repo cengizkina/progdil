@@ -3,7 +3,7 @@
 
 class Random{
 
-	public $gecmis = array("ornek kelime");	
+	public $gecmis = array();	
 		
 	function randomName($language, $adet)
 	{
