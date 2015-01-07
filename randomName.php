@@ -36,12 +36,12 @@ class Random  {
 		while ($i <= $adet)  {
 			$index_isim = rand(0,$isim_boyut-1);
 			$index_sifat = rand(0,$sifat_boyut-1);
-			$kelime = $sozluk[$language][1][$index_sifat]. " " . $sozluk[$language][0][$index_isim] . "\n";
+			$kelime = $sozluk[$language][1][$index_sifat]. " " . $sozluk[$language][0][$index_isim];
 			
 			if ($this->checkWord($kelime)) {
 				array_push($this->word_list, $kelime);
 				$i++;
-				echo $kelime;
+				return $kelime;
 			}
 		}
 	
