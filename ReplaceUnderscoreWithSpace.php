@@ -22,7 +22,7 @@ class Underscore  {
 					$array[$i] = " ";
 				}
 			}
-			echo implode("", $array) . "\n";
+			return implode("", $array);
 	}
 	}
 	function justunderscore($word)	{
